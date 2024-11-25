@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Components/home/Home";
+import Register from './Components/User/Register';
+import Login from './Components/User/Login';
+import ForgotPassword from './Components/User/ForgotPassword';
+import ResetPassword from './Components/User/ResetPassword';
+import UserProfile from "./Components/User/UserProfile";
+import UpdateProfile from "./Components/User/UpdateProfile"
+import UserProfileView from "./Components/User/UserProfileView";
+import Scheduling from "./Components/sheduling/Scheduling";  
+import Review from "./Components/review/Review";
+
+
+
+
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <BrowserRouter>
+  
+        <Routes>
+     
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/forgotpassword" element={<ForgotPassword />} />
+          <Route path="/resetpassword/:token" element={<ResetPassword />} />
+          <Route path="/profile" element={<UserProfile/>} />
+          <Route path="/updateprofile" element={<UpdateProfile/>} />
+          <Route path="/viewprofile" element={<UserProfileView/>} />
+          <Route path="/scheduling" element={<Scheduling/>} />
+          <Route path="/review" element={<Review/>} />
+          
+          
+          
+          
+        </Routes>
+      </BrowserRouter>
+    
+    </div>
+  );
 }
 
-export default App
+export default App;
