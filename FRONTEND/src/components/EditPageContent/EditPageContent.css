@@ -1,0 +1,61 @@
+.body{
+ margin: 0; 
+}
+
+
+
+.Img_box{
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+
+.Img_box_content{
+  position: relative;
+    
+}
+.button-box{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end ;
+  align-items: center;
+  margin-right: 6px;
+}
+
+.button1, .button2{
+  border-radius: 4px;
+  margin-right: 5px;  
+  padding: 4px 6px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.button1{
+  background-color: rgb(5, 146, 5);
+  color: aliceblue;
+}
+.button2{
+  background-color: rgb(146, 5, 5);
+  color: aliceblue;
+}
+
+.button1:hover{
+  box-shadow: 10px;
+
+}
+.button2:hover{
+  box-shadow: 10px;
+
+}
+
+.button1:active{
+  background-color: rgb(255, 255, 255);
+  color: rgb(5, 131, 37);
+
+}
+.button2:active{
+  background-color: rgb(255, 255, 255);
+  color: rgb(145, 3, 3);
+
+}

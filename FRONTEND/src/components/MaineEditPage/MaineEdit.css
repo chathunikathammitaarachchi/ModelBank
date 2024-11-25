@@ -1,0 +1,91 @@
+.left_bar_content{
+  width: 177px;
+  /*height: 48em;*/
+  left: 0;
+  background-color: rgb(19, 18, 17);
+  z-index: 200;
+  position: fixed;
+  top: 80px;
+  bottom:0;
+}
+
+
+  
+.liner{
+  width: 150px;
+  height: 0.7px;
+  background-color: black;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  
+  
+}
+
+.category_Description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 23px;
+  gap: 2px;
+  color: rgba(240, 255, 255, 0.774);
+  justify-content: center;
+  align-items: center
+}
+.edit_button_box{
+  margin: 95px 2px;
+  border-radius: 5px;
+  display: flex;
+  gap: 5px;
+  
+}
+
+.edit_button1,.edit_button2, .edit_button3 {
+  transition-duration: 0.2s;
+   cursor: pointer;
+   border-radius: 3px;
+   border: none;
+
+}
+
+.edit_button2 
+  {
+  padding: 5px 14px;
+  color: rgb(11, 11, 228);
+}
+.edit_button1 
+  {
+  padding: 5px 8px;
+  color: rgb(0, 0, 0);
+}
+.edit_button3 
+  {
+  padding: 5px 8px;
+  color: rgb(255, 255, 255);
+  background-color: red;
+  
+}
+
+.edit_button1:hover{
+  box-shadow: 10px;
+}
+.edit_button2:hover{
+  box-shadow: 10px;
+}
+.edit_button3:hover{
+  box-shadow: 10px;
+}
+
+
+.edit_button:active{
+  background-color: rgb(5, 5, 247);
+  color: aliceblue;
+
+}
+
+.category_Description{
+  align-items: center;
+  gap: 15px;
+}

@@ -1,0 +1,16 @@
+.link{
+  color: rgb(255, 249, 249);
+  padding: 3px 15px;
+  width: 9px;
+  align-items: center;
+  text-decoration: none;
+ 
+
+}
+
+.footer_img{
+  width: 24px;
+  border-radius: 15px;
+  margin-right: 35px;
+  cursor: pointer;
+}

@@ -1,0 +1,73 @@
+.left_bar_content{
+  width: 177px;
+  /*height: 48em;*/
+  left: 0;
+  background-color: rgb(19, 18, 17);
+  z-index: 200;
+  position: fixed;
+  top: 80px;
+  bottom:0;
+}
+
+.profile_icon_box{
+  margin-left: 10px;
+  width: 90px;
+  display: flex;
+  justify-content:flex-end ;
+  align-items: center
+  ;
+}
+.profile_icon{
+  width: 100%;
+  margin-top: 13px;
+  border-radius: 50px;
+  margin-left: 400px;
+  
+}
+.liner{
+  width: 150px;
+  height: 0.7px;
+  background-color: black;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  
+  
+}
+
+.category_Description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 23px;
+  gap: 2px;
+  color: rgba(240, 255, 255, 0.774);
+  justify-content: center;
+  align-items: center
+}
+.edit_button_box{
+  margin: 95px 95px;
+  border-radius: 5px;
+  
+}
+
+.edit_button{
+  transition-duration: 0.2s;
+  padding: 4px 22px;
+  color: blue;
+  cursor: pointer;
+
+}
+
+.edit_button:hover{
+  box-shadow: 10px;
+
+}
+
+.edit_button:active{
+  background-color: rgb(5, 5, 247);
+  color: aliceblue;
+
+}
